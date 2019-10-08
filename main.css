@@ -1,0 +1,108 @@
+html, body {
+    background-color: #333333;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+br {
+    display: block;
+    content: ""; 
+    margin-top: 3em; 
+}
+
+.gallery {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery img{
+    margin: 2em;
+    height: 25em;
+    vertical-align: middle;
+}
+
+.headerbox{
+    width: 100vw;
+    height: 6em;
+    background: #009999;
+    margin: 0em 0em 0em 0em;
+    padding: 0;
+}
+
+h1 { 
+    color: white;
+    font-size: 4em;
+    margin: 0em 0em 0em .5em;
+    font-weight: bold;
+    text-align: left;
+    font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: #009999;
+    font-size: 1.5em;
+    margin: 1em 1em 1em 1em;
+    font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+p {
+    color: white;
+    margin: 1em 15em 1em 4em;
+    padding: 0em;
+    font-size: 1em;
+    font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #999999;
+    font-size: 1em;
+    font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+}
+  
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #006666;
+}
+
+.active {
+    background-color: #009999;
+}
+
+#more {
+    display: none;
+}
+
+button{
+    background-color: #999999; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 4em 1em 4em;
+    padding: 1em 4em 1em 4em;
+    font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+}
