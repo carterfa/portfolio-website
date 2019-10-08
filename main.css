@@ -58,7 +58,7 @@ p {
     font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
 } 
 
-ul {
+nav, ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
