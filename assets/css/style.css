@@ -32,7 +32,7 @@ br {
     float: left;
 }
 
-.headerbox{
+header{
     width: 100vw;
     height: 6em;
     background: #009999;
@@ -43,7 +43,7 @@ br {
     left: 0;
 }
 
-.footerbox{
+footer{
     width: 100vw;
     height: 2em;
     background: #009999;
