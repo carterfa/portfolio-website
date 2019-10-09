@@ -26,18 +26,44 @@ br {
     vertical-align: middle;
 }
 
+#profilepic {
+    width: 200px;
+    margin: 0em 1em 1em 1em;
+    float: left;
+}
+
 .headerbox{
     width: 100vw;
     height: 6em;
     background: #009999;
     margin: 0em 0em 0em 0em;
     padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.footerbox{
+    width: 100vw;
+    height: 2em;
+    background: #009999;
+    margin: 6em 0em 0em 0em;
+    padding: 0em;
 }
 
 h1 { 
     color: white;
     font-size: 4em;
-    margin: 0em 0em 0em .5em;
+    margin: 0em 0em 0em 0em;
+    font-weight: bold;
+    text-align: left;
+    font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#toptext{
+    color: white;
+    font-size: 4em;
+    margin: 0em 0em 1.5em 0em;
     font-weight: bold;
     text-align: left;
     font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
@@ -58,7 +84,7 @@ p {
     font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
 } 
 
-nav, ul {
+nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -67,9 +93,12 @@ nav, ul {
     font-size: 1em;
     font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
+    position: fixed;
+    top:6em;
+    left: 0em;
 }
   
-li {
+nav li {
     float: left;
 }
 
