@@ -4,15 +4,17 @@ html, body {
     margin: 0;
     font-size: 1em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
 }
 
 body {
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-br {
-    display: block;
-    content: ""; 
+.content {
+    flex: 1 0 auto;
 }
 
 .gallery {
@@ -43,6 +45,7 @@ header{
     left: 0;
 }
 
+
 footer{
     width: 100vw;
     height: 2em;
@@ -50,13 +53,13 @@ footer{
     margin: 0em 0em 0em 0em;
     padding: 0em;
     clear: left;
+    flex-shrink: 0;
 }
 
 h1 { 
     color: white;
     font-size: 6em;
     margin: 0em 0em 0em 0em;
-    font-weight: bold;
     text-align: left;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -165,6 +168,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
+    font-weight: bold;
     margin: 1em 4em 1em 4em;
     padding: 1em 4em 1em 4em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
