@@ -39,7 +39,7 @@ header{
     height: 6em;
     background: #009999;
     margin: 0em 0em 0em 0em;
-    padding: 0;
+    padding: 0 0 0 1em;
     position: fixed;
     top: 0;
     left: 0;
