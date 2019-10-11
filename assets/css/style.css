@@ -142,7 +142,8 @@ form{
     margin: 1em;
 }
 
-nav{
+#desktopnav {
+    display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -153,9 +154,10 @@ nav{
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
     clear: both;
 }
-  
-nav li {
+
+#desktopnav li{
     float: left;
+    color: white;
 }
 
 li a {
@@ -173,6 +175,11 @@ li a:hover {
 
 .active {
     background-color: #009999;
+}
+
+#mobilenav {
+    display: active;
+    clear: both;
 }
 
 #more {
@@ -211,6 +218,13 @@ button {
 button:hover{
     background-color: #009999;
 }
-#readBtn{
-    margin: 1em 4em 1em 4em;
-}
+
+/* @media screen and (max-width: 618px) {
+    #desktopnav {
+        display: none;
+    }
+
+    #mobilenav {
+        display: active;
+    }
+} */
