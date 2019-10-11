@@ -15,6 +15,8 @@ body {
 
 .content {
     flex: 1 0 auto;
+    width: 960px;
+    overflow: auto;
 }
 
 .gallery {
@@ -30,8 +32,18 @@ body {
 
 #profilepic {
     width: 200px;
-    margin: 0em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
     float: left;
+}
+
+#bio {
+    color: white;
+    margin: 1em 1em 1em 4em;
+    padding: 0em;
+    font-size: 1.2em;
+    line-height: 1.75;
+    letter-spacing: .05em;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
@@ -66,8 +78,7 @@ h1 {
 
 #toptext{
     color: white;
-    font-size: 4em;
-    margin: 0em 0em 1.5em 0em;
+    font-size: 9em;
     font-weight: bold;
     text-align: left;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
@@ -81,30 +92,49 @@ h2 {
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 } 
 
-h3, label {
+h3 {
     color: white;
     margin: 1.75em 15em 1em 4em;
     padding: 0em;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: bold;
     letter-spacing: .07em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 } 
 
-p, form {
+label {
     color: white;
-    margin: 1em 15em 1em 4em;
+    margin: 1em 1em 1em 1em;
     padding: 0em;
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: .07em;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+p {
+    color: white;
+    margin: 1em 1em 1em 6em;
+    padding: 0em;
+    font-size: 1.2em;
+    line-height: 1.75;
     letter-spacing: .05em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 } 
 
 form{
-    display: block;
+    color: white;
+    margin: 1em;
+    padding: 0em;
+    font-size: 1em;
+    line-height: 1.75;
+    letter-spacing: .05em;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#formbox {
+    margin: 1em;
+}
 
 nav{
     list-style-type: none;
@@ -166,14 +196,17 @@ button {
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: bold;
-    margin: 1em 4em 1em 4em;
-    padding: 1em 4em 1em 4em;
+    margin-left: 1em;
+    margin-top: 0em;
+    padding: .5em 2em .5em 2em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button:hover{
     background-color: #009999;
+}
+#readBtn{
+    margin: 1em 4em 1em 4em;
 }
