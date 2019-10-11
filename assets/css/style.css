@@ -15,7 +15,7 @@ body {
 
 .content {
     flex: 1 0 auto;
-    width: 75%;
+    width: 85%;
     overflow: auto;
     margin-top: 10.7em;
 }
@@ -49,8 +49,7 @@ body {
 
 header{
     width: 100vw;
-    background: #009999;
-    margin: 0em 0em 0em 0em;
+    margin: 0;
     padding: 0;
     position: fixed;
     top: 0;
@@ -82,13 +81,26 @@ h1 {
 }
 
 #toptext{
+    display: block;
     color: white;
     font-size: 6em;
     text-align: left;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    background: #009999;
 } 
+
+#mobiletext{
+    display: none;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #009999;
+}
 
 h2 {
     color: #009999;
@@ -133,7 +145,7 @@ form{
     margin: 1em;
     padding: 0em;
     font-size: 1em;
-    line-height: 1.75;
+    line-height: 1.75em;
     letter-spacing: .05em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -143,7 +155,7 @@ form{
 }
 
 #desktopnav {
-    display: none;
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -178,9 +190,29 @@ li a:hover {
 }
 
 #mobilenav {
-    display: active;
+    display: none;
     clear: both;
+    float: left;
+    list-style-type: none;
+    background-color: #999999;
+    font-weight: bold;
+    font-size: .5em;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#mobilenav li{
+    border-top: solid #333333 2px;
+}
+
+.mobile-box {
+    width: 100%;
+    padding: 0;
+    height: 1500px;
+    border-top: solid #333333 2px;
+    margin: 0;
+    background: #009999;
+    float: left;
+  }
 
 #more {
     display: none;
@@ -188,7 +220,7 @@ li a:hover {
 
 #message{
     background-color: white;
-    width: 50em;
+    width: 75%;
     padding: .5em;
     height: 6em;
     box-sizing: border-box;
@@ -196,7 +228,7 @@ li a:hover {
 
 .textinput{
     background-color: white;
-    width: 50em;
+    width: 75%;
     padding: .5em;
     box-sizing: border-box;
 }
@@ -219,12 +251,55 @@ button:hover{
     background-color: #009999;
 }
 
-/* @media screen and (max-width: 618px) {
+@media screen and (max-width: 620px) {
     #desktopnav {
         display: none;
     }
 
     #mobilenav {
-        display: active;
+        display: block;
     }
-} */
+
+    .content {
+    margin-top: 1em;
+    margin-left: 5em;
+    padding-right: 1em;
+    overflow-x: hidden;
+    }
+
+    header {
+        width: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #toptext{
+        display: none;
+    }
+    #mobiletext{
+        display: block;
+    }
+
+    #profilepic{
+        float: none;
+    }
+
+    #formbox {
+        margin: 0em;
+    }
+
+    label {
+        color: white;
+        margin: 1em 1em 1em 1em;
+        padding: 0em;
+        font-size: 1em;
+        font-weight: bold;
+        letter-spacing: .07em;
+        font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+    } 
+} 
