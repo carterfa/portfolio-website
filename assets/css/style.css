@@ -17,6 +17,7 @@ body {
     flex: 1 0 auto;
     width: 960px;
     overflow: auto;
+    clear: both;
 }
 
 .gallery {
@@ -51,12 +52,18 @@ header{
     height: 6em;
     background: #009999;
     margin: 0em 0em 0em 0em;
-    padding: 0 0 0 1em;
+    padding: 0 0 1em 1em;
     position: fixed;
     top: 0;
     left: 0;
 }
 
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+    overflow: auto;
+  }
 
 footer{
     width: 100vw;
@@ -76,13 +83,13 @@ h1 {
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#toptext{
+ #toptext{
     color: white;
     font-size: 9em;
     font-weight: bold;
     text-align: left;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-}
+} 
 
 h2 {
     color: #009999;
@@ -149,6 +156,7 @@ nav{
     position: fixed;
     top:6em;
     left: 0em;
+    clear: both;
 }
   
 nav li {
@@ -165,6 +173,7 @@ li a {
   
 li a:hover {
     background-color: #006666;
+    color: white;
 }
 
 .active {
