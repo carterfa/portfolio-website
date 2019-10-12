@@ -18,6 +18,9 @@ body {
     width: 85%;
     overflow: auto;
     margin-top: 10.7em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
 }
 
 .gallery {
@@ -104,41 +107,62 @@ h1 {
 
 h2 {
     color: #009999;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: bold;
-    margin: 2.25em 1em 0em 1em;
+    margin: 0em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 } 
 
 h3 {
     color: white;
-    margin: 1.75em 15em 1em 4em;
+    margin: 1.25em 0em 0em 0em;
     padding: 0em;
     font-size: 1.25em;
     font-weight: bold;
     letter-spacing: .07em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 } 
+
+section {
+    margin-top: 2.25em;
+    overflow-y: hidden;
+}
 
 label {
     color: white;
-    margin: 1em 1em 1em 1em;
     padding: 0em;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: bold;
     letter-spacing: .07em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 } 
 
+textarea, input {
+    display: block;
+    width: 50%;
+}
+
 p {
     color: white;
-    margin: 1em 1em 1em 6em;
+    margin: 0em;
     padding: 0em;
     font-size: 1.2em;
-    line-height: 1.75;
+    line-height: 1.75em;
     letter-spacing: .05em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 } 
+
+ul li {
+    color: white;
+    margin: 1em;
+    padding: 0em;
+    font-size: 1.2em;
+    line-height: 1;
+    letter-spacing: .05em;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: disc;
+    float: left;
+}
 
 form{
     color: white;
@@ -223,7 +247,7 @@ li a:hover {
     display: none;
 }
 
-#message{
+/* #message{
     background-color: white;
     width: 75%;
     padding: .5em;
@@ -236,7 +260,7 @@ li a:hover {
     width: 75%;
     padding: .5em;
     box-sizing: border-box;
-}
+} */
 
 button {
     background-color: #999999; 
@@ -244,12 +268,16 @@ button {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: bold;
-    margin-left: 1em;
-    margin-top: 0em;
+    margin: 0em 1em 0em 1em;
     padding: .5em 2em .5em 2em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#readBtn{
+    margin: 1.25em 0em 0em 0em;
+    font-size: 1.25em;
 }
 
 button:hover{
@@ -266,9 +294,9 @@ button:hover{
     }
 
     .content {
-    margin-top: 1em;
-    margin-left: 10em;
-    padding-right: 6em;
+    margin-top: 0em;
+    margin-left: 5em;
+    padding-right: 1em;
     overflow-x: hidden;
     }
 
@@ -293,18 +321,17 @@ button:hover{
     #profilepic{
         float: none;
     }
+    
+    textarea, input {
+        display: block;
+        width: 90%;
+    }
 
-    #formbox {
-        margin: 0em;
+    form {
+        margin-top: 0em;
     }
 
     label {
-        color: white;
-        margin: 1em 1em 1em 1em;
-        padding: 0em;
-        font-size: 1em;
-        font-weight: bold;
-        letter-spacing: .07em;
-        font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-    } 
+        margin-bottom: 0em;
+    }
 } 
