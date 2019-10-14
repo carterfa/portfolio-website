@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/evs6zet.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Contact</title>
@@ -15,42 +15,45 @@
                 <h1 id="toptext">Farrah Carter</h1>
                 <h1 id="mobiletext">FAC</h1>
                 <nav id="desktopnav">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="coding.html">Coding</a></li>
-                    <li><a href="artdesign.html">Art & Design</a></li>
-                    <li><a href="photorestoration.html">Photo Restoration</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <a href="index.html">About</a>
+                    <a href="resume.html">Resume</a>
+                    <a onmouseover="DropDown()" id="DropBtn">Portfolio<div class="triangle-down"></div></a>
+                    <a class="active" href="contact.html">Contact</a>
                 </nav>
-                <nav id="mobilenav">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="coding.html">Coding</a></li>
-                    <li><a href="artdesign.html">Art</a></li>
-                    <li><a href="photorestoration.html">Photo</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                    <div class="mobile-box"></div>
-                </nav>
+                <div id="PortfolioNav" style="display:none">
+                        <nav><a href="#">Coding</a></nav>
+                        <nav><a href="#">Art & Design</a></nav>
+                        <nav><a href="#">Photo Restoration</a></nav>
+                </div>
             </header>
 
-<div class="content">
-    <form>
-        <label>Name:</label>
-        <input type="text"></input>
-    </form>
-    <form>  
-        <label>Email:</label>
-        <input type="text"></input>
-    </form>
-  
-    <form>
-        <label>Message:</label>
-        <textarea type="text"></textarea>
-    </form>
-    
-    <button>Submit</button>
-</div>
+    <div class="content">
+        <form>
+            <label>Name:</label>
+            <input type="text"></input>
+        </form>
+        <form>
+            <label>Email:</label>
+            <input type="text"></input>
+        </form>
+
+        <form>
+            <label>Message:</label>
+            <textarea type="text"></textarea>
+        </form>
+
+        <button id="subBtn">Submit</button>
+    </div>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 

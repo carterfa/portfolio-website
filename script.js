@@ -1,4 +1,4 @@
-function myFunction() {
+function readmoreBtn() {
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("readBtn");
   
@@ -10,3 +10,14 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+ function DropDown() {
+    var x = document.getElementById("PortfolioNav");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      document.getElementById("DropBtn").style.backgroundColor = "#006666";
+    } else {
+      x.style.display = "none";
+      document.getElementById("DropBtn").style.backgroundColor = "#999999";
+    }
+  } 

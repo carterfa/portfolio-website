@@ -28,7 +28,7 @@ body {
     margin: auto;
 }
 
-.gallery img{
+.gallery img {
     margin: 2em;
     height: 25em;
     vertical-align: middle;
@@ -38,6 +38,14 @@ body {
     width: 200px;
     margin: 1em 1em 1em 1em;
     float: left;
+}
+
+#readBtn {
+    border: none;
+    background-color: #999999;
+    padding: .25em 1em .25em 1em;
+    color: white;
+    font-weight: bold;
 }
 
 .bio {
@@ -50,7 +58,7 @@ body {
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+header {
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -64,9 +72,9 @@ header{
     clear: both;
     display: table;
     overflow: auto;
-  }
+}
 
-footer{
+footer {
     width: 100vw;
     height: 2em;
     background: #009999;
@@ -76,34 +84,48 @@ footer{
     flex-shrink: 0;
 }
 
-h1 { 
+h1 {
     color: white;
     font-size: 9em;
-    text-align: left;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#toptext{
+#toptext {
     display: block;
     color: white;
     font-size: 6em;
     text-align: left;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #009999;
-} 
-
-#mobiletext{
-    display: none;
-    color: white;
-    font-size: 2em;
-    text-align: center;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
+    padding-left: .1em;
     background: #009999;
 }
+
+#mobiletext {
+    display: none;
+    color: white;
+    font-size: 3em;
+    float: left;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding-left: .1em;
+    background: #009999;
+    width:100vw;
+}
+
+/* .menu-container {
+    display: none;
+    float: left;
+    cursor: pointer;
+    margin: .5em 1em .5em 1em;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  } */
 
 h2 {
     color: #009999;
@@ -111,7 +133,7 @@ h2 {
     font-weight: bold;
     margin: 0em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-} 
+}
 
 h3 {
     color: white;
@@ -121,7 +143,7 @@ h3 {
     font-weight: bold;
     letter-spacing: .07em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-} 
+}
 
 section {
     margin-top: 2.25em;
@@ -135,14 +157,18 @@ label {
     font-weight: bold;
     letter-spacing: .07em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-} 
+}
 
 textarea, input {
     display: block;
     width: 50%;
 }
 
-p {
+textarea {
+    height: 10em;
+}
+
+p, li {
     color: white;
     margin: 0em;
     padding: 0em;
@@ -150,21 +176,9 @@ p {
     line-height: 1.75em;
     letter-spacing: .05em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-} 
-
-ul li {
-    color: white;
-    margin: 1em;
-    padding: 0em;
-    font-size: 1.2em;
-    line-height: 1;
-    letter-spacing: .05em;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-    list-style-type: disc;
-    float: left;
 }
 
-form{
+form {
     color: white;
     margin: 1em;
     padding: 0em;
@@ -178,92 +192,118 @@ form{
     margin: 1em;
 }
 
-#desktopnav {
+/*
+.dropBtn {
     display: block;
-    list-style-type: none;
+    border: none;
     margin: 0;
-    padding: 0;
+    padding: .5em;
     overflow: hidden;
     background-color: #999999;
-    font-size: 1em;
+    color: white;
+    font-size: 1.2em;
     font-weight: bold;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-    clear: both;
-}
-
-#desktopnav li{
     float: left;
-    color: white;
 }
 
-li a {
+.dropdown {
+    position: relative;
     display: block;
-    color: white;
-    text-align: center;
-    padding: 1em 1em;
-    text-decoration: none;
 }
-  
-li a:hover {
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #999999;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+*/
+
+#dropBtn a:hover{
     background-color: #006666;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-top: 10px solid white;
+    float: right;
+    margin: .5em 0em .3em .3em;
+}
+
+nav {
+    content: "";
+    clear: both;
+    display: table;
+    background-color: #999999;
+    width: 100vw;
+    height: 1em;
+}
+
+nav a {
+    display: block;
+    float: left;
+    border: none;
+    margin: 0;
+    padding: .5em 1em .5em 1em;
+    overflow: hidden;
+    background-color: #999999;
     color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#PortfolioNav {
+    display: none;
+}
+
+#PortfolioNav nav{
+    background-color: none;
+    max-width: 200px;
+    margin-left: 12.35em;
+}
+
+#PortfolioNav a{
+    background-color: #006666;
+    width: 200px;
+}
+
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: white;
+    background-color: #006666;
 }
 
 .active {
     background-color: #009999;
 }
 
-#mobilenav {
-    display: none;
-    clear: both;
-    float: left;
-    list-style-type: none;
-    background-color: #999999;
-    font-weight: bold;
-    font-size: 1em;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#mobilenav li{
-    border-top: solid #333333 2px;
-}
-
-#mobilenav li a{
-    padding: .5em;
-}
-
-
-.mobile-box {
-    width: 100%;
-    padding: 0;
-    height: 1500px;
-    border-top: solid #333333 2px;
-    margin: 0;
-    background: #009999;
-    float: left;
-  }
-
 #more {
     display: none;
 }
 
-/* #message{
-    background-color: white;
-    width: 75%;
-    padding: .5em;
-    height: 6em;
-    box-sizing: border-box;
-}
-
-.textinput{
-    background-color: white;
-    width: 75%;
-    padding: .5em;
-    box-sizing: border-box;
-} */
-
-button {
-    background-color: #999999; 
+#subBtn {
+    background-color: #999999;
     border: none;
     color: white;
     text-align: center;
@@ -275,63 +315,65 @@ button {
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#readBtn{
+#readBtn {
     margin: 1.25em 0em 0em 0em;
     font-size: 1.25em;
 }
 
-button:hover{
-    background-color: #009999;
+button:hover {
+    background-color: #006666;
 }
 
 @media screen and (max-width: 620px) {
-    #desktopnav {
-        display: none;
-    }
-
-    #mobilenav {
-        display: block;
-    }
-
     .content {
-    margin-top: 0em;
-    margin-left: 5em;
-    padding-right: 1em;
-    overflow-x: hidden;
+        margin-top: 7em;
+        overflow-x: hidden;
     }
 
     header {
-        width: auto;
         position: fixed;
         top: 0;
         left: 0;
     }
 
-    footer {
-        display: none;
+    .menu-container{
+        display: block;
     }
 
     #toptext{
         display: none;
     }
+
     #mobiletext{
         display: block;
     }
 
-    #profilepic{
+    #profilepic {
         float: none;
     }
-    
+
     textarea, input {
         display: block;
         width: 90%;
     }
 
     form {
-        margin-top: 0em;
+        margin-top: 1em;
     }
 
     label {
         margin-bottom: 0em;
     }
-} 
+
+    nav a {
+        padding-left: .5em;
+        padding-right: .5em;
+        font-weight: normal;
+    }
+
+    #PortfolioNav nav{
+        background-color: none;
+        max-width: 200px;
+        margin-left: 8.75em;
+    }
+}

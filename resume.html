@@ -12,27 +12,21 @@
 </head>
 
 <body>
-    <header class="clearfix">
-        <h1 id="toptext">Farrah Carter</h1>
-        <h1 id="mobiletext">FAC</h1>
-        <nav id="desktopnav">
-            <li><a href="index.html">About</a></li>
-            <li class="active"><a href="resume.html">Resume</a></li>
-            <li><a href="coding.html">Coding</a></li>
-            <li><a href="artdesign.html">Art & Design</a></li>
-            <li><a href="photorestoration.html">Photo Restoration</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </nav>
-        <nav id="mobilenav">
-            <li><a href="index.html">About</a></li>
-            <li class="active"><a href="resume.html">Resume</a></li>
-            <li><a href="coding.html">Coding</a></li>
-            <li><a href="artdesign.html">Art</a></li>
-            <li><a href="photorestoration.html">Photo</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <div class="mobile-box"></div>
-        </nav>
-    </header>
+        <header class="clearfix">
+                <h1 id="toptext">Farrah Carter</h1>
+                <h1 id="mobiletext">FAC</h1>
+                <nav id="desktopnav">
+                    <a href="index.html">About</a>
+                    <a class="active" href="resume.html">Resume</a>
+                    <a onmouseover="DropDown()" id="DropBtn">Portfolio<div class="triangle-down"></div></a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div id="PortfolioNav" style="display:none">
+                        <nav><a href="#">Coding</a></nav>
+                        <nav><a href="#">Art & Design</a></nav>
+                        <nav><a href="#">Photo Restoration</a></nav>
+                </div>
+            </header>
     <div class="content">
         <section>
             <h2>Education</h2>
@@ -61,7 +55,7 @@
             <p>Performed PC maintenance, video editing, photo restoration, and other computer-based work for a small
                 business. Compiled the 40 page manual detailing all of the work done there.</p>
 
-            <button onclick="myFunction()" id="readBtn">More</button>
+            <button onclick="readmoreBtn()" id="readBtn">More</button>
             <span id="more">
                 <h3>Exhibit Educator</h3>
                 <p>Ripley’s Aquarium of the Smokies (May 2017–Dec 2017)</p>
@@ -116,6 +110,9 @@
         </section>
     </div>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
