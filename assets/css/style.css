@@ -24,15 +24,32 @@ body {
 }
 
 .gallery {
-    max-width: 1000px;
-    margin: auto;
+    content: "";
+    clear: both;
+    display: table;
+    overflow: auto;
 }
 
 .gallery img {
-    margin: 2em;
-    height: 25em;
-    vertical-align: middle;
+    margin: 0;
+    height: 240px;
+    width: 320px;
 }
+
+.imgholder {
+    position: relative;
+    margin: 20px;
+    float: left;
+}
+
+.txtbox{
+    position: absolute;  
+    margin: auto;
+    width: 320px;
+    bottom: 20px;
+    background-color: #4aaaa5;
+    color: white;
+  }
 
 #profilepic {
     width: 200px;
@@ -168,7 +185,7 @@ textarea {
     height: 10em;
 }
 
-p, li {
+p, li, a{
     color: white;
     margin: 0em;
     padding: 0em;
@@ -176,6 +193,7 @@ p, li {
     line-height: 1.75em;
     letter-spacing: .05em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
 }
 
 form {
@@ -225,9 +243,9 @@ form {
 
 */
 
-#dropBtn a:hover{
+/* #dropBtn a:hover{
     background-color: #006666;
-}
+} */
 
 .triangle-down {
 	width: 0;
@@ -277,7 +295,7 @@ nav a {
     width: 200px;
 }
 
-a:not([href]):not([tabindex]) {
+/* a:not([href]):not([tabindex]) {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -287,7 +305,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     color: white;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 a:hover {
     color: white;
