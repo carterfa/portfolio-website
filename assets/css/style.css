@@ -23,33 +23,6 @@ body {
     margin-bottom: 1em;
 }
 
-.gallery {
-    content: "";
-    clear: both;
-    display: table;
-    overflow: auto;
-}
-
-.gallery img {
-    margin: 0;
-    height: 240px;
-    width: 320px;
-}
-
-.imgholder {
-    position: relative;
-    margin: 20px;
-    float: left;
-}
-
-.txtbox{
-    position: absolute;  
-    margin: auto;
-    width: 320px;
-    bottom: 20px;
-    background-color: #4aaaa5;
-    color: white;
-  }
 
 #profilepic {
     width: 200px;
@@ -210,43 +183,6 @@ form {
     margin: 1em;
 }
 
-/*
-.dropBtn {
-    display: block;
-    border: none;
-    margin: 0;
-    padding: .5em;
-    overflow: hidden;
-    background-color: #999999;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-    float: left;
-}
-
-.dropdown {
-    position: relative;
-    display: block;
-}
-
-.dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #999999;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-*/
-
-/* #dropBtn a:hover{
-    background-color: #006666;
-} */
-
 .triangle-down {
 	width: 0;
 	height: 0;
@@ -294,18 +230,6 @@ nav a {
     background-color: #006666;
     width: 200px;
 }
-
-/* a:not([href]):not([tabindex]) {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-} */
 
 a:hover {
     color: white;
