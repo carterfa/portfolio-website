@@ -17,7 +17,7 @@ body {
     flex: 1 0 auto;
     width: 85%;
     overflow: auto;
-    margin-top: 10.7em;
+    margin-top: 10.5em;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1em;
@@ -167,6 +167,8 @@ p, li, a{
     letter-spacing: .05em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
     list-style-type: none;
+    line-height: 1.75em;
+    letter-spacing: .05em;
 }
 
 form {
@@ -211,24 +213,9 @@ nav a {
     overflow: hidden;
     background-color: #999999;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#PortfolioNav {
-    display: none;
-}
-
-#PortfolioNav nav{
-    background-color: none;
-    max-width: 200px;
-    margin-left: 12.35em;
-}
-
-#PortfolioNav a{
-    background-color: #006666;
-    width: 200px;
 }
 
 a:hover {

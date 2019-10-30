@@ -1,13 +1,13 @@
 function readmoreBtn() {
-    let moreText = document.getElementById("more");
-    let btnText = document.getElementById("readBtn");
+    let more = document.getElementById("more");
+    let readBtn = document.getElementById("readBtn");
   
-    if (moreText.style.display === "inline") {
-      btnText.innerHTML = "More";
-      moreText.style.display = "none";
+    if (more.style.display === "inline") {
+      readBtn.innerHTML = "More";
+      more.style.display = "none";
     } else {
-      btnText.innerHTML = "Less";
-      moreText.style.display = "inline";
+      readBtn.innerHTML = "Less";
+      more.style.display = "inline";
     }
   }
 
