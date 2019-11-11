@@ -240,26 +240,36 @@ button:hover {
         margin-top: 11em;
         overflow-x: hidden;
     }
+
     header {
         position: fixed;
         top: 0;
         left: 0;
     }
+
     .menu-container {
         display: block;
     }
+
     #toptext {
         display: none;
     }
+
     #mobiletext {
         display: block;
     }
+
     #profilepic {
         float: none;
     }
+
     nav a {
         padding-left: .5em;
         padding-right: .5em;
         font-weight: normal;
+    }
+
+    h2 {
+        font-size: 1em;
     }
 }
