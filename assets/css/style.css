@@ -91,7 +91,7 @@ h1 {
     margin: 0;
     padding-left: .1em;
     background: #009999;
-    width:100vw;
+    width: 100vw;
 }
 
 /* .menu-container {
@@ -149,7 +149,7 @@ textarea {
     height: 10em;
 }
 
-p, li, a{
+p, li, a {
     color: white;
     margin: 0em;
     padding: 0em;
@@ -163,10 +163,10 @@ p, li, a{
 }
 
 .triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
     border-top: 10px solid white;
     float: right;
     margin: .5em 0em .3em .3em;
@@ -230,38 +230,35 @@ button:hover {
     background-color: #006666;
 }
 
+.projects {
+    font-size: 1.2em;
+}
+
 @media screen and (max-width: 675px) {
     .content {
         margin-top: 11em;
         overflow-x: hidden;
     }
-
     header {
         position: fixed;
         top: 0;
         left: 0;
     }
-
-    .menu-container{
+    .menu-container {
         display: block;
     }
-
-    #toptext{
+    #toptext {
         display: none;
     }
-
-    #mobiletext{
+    #mobiletext {
         display: block;
     }
-
     #profilepic {
         float: none;
     }
-
     nav a {
         padding-left: .5em;
         padding-right: .5em;
         font-weight: normal;
     }
-
 }
