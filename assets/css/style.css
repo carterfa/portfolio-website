@@ -23,19 +23,10 @@ body {
     margin-bottom: 1em;
 }
 
-
 #profilepic {
     width: 200px;
     margin: 1em 1em 1em 1em;
     float: left;
-}
-
-#readBtn {
-    border: none;
-    background-color: #999999;
-    padding: .25em 1em .25em 1em;
-    color: white;
-    font-weight: bold;
 }
 
 .bio {
@@ -162,27 +153,13 @@ p, li, a{
     color: white;
     margin: 0em;
     padding: 0em;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.75em;
     letter-spacing: .05em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
     list-style-type: none;
     line-height: 1.75em;
     letter-spacing: .05em;
-}
-
-form {
-    color: white;
-    margin: 1em;
-    padding: 0em;
-    font-size: 1em;
-    line-height: 1.75em;
-    letter-spacing: .05em;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#formbox {
-    margin: 1em;
 }
 
 .triangle-down {
@@ -213,7 +190,7 @@ nav a {
     overflow: hidden;
     background-color: #999999;
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -253,9 +230,9 @@ button:hover {
     background-color: #006666;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 675px) {
     .content {
-        margin-top: 7em;
+        margin-top: 11em;
         overflow-x: hidden;
     }
 
@@ -281,28 +258,10 @@ button:hover {
         float: none;
     }
 
-    textarea, input {
-        display: block;
-        width: 90%;
-    }
-
-    form {
-        margin-top: 1em;
-    }
-
-    label {
-        margin-bottom: 0em;
-    }
-
     nav a {
         padding-left: .5em;
         padding-right: .5em;
         font-weight: normal;
     }
 
-    #PortfolioNav nav{
-        background-color: none;
-        max-width: 200px;
-        margin-left: 8.75em;
-    }
 }
