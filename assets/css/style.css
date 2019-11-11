@@ -231,7 +231,8 @@ button:hover {
 }
 
 .projects {
-    font-size: 1.2em;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 675px) {
