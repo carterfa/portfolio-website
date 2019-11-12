@@ -57,7 +57,7 @@ header {
 
 footer {
     width: 100vw;
-    height: 2em;
+    height: 2.8em;
     background: #009999;
     margin: 0em 0em 0em 0em;
     padding: 0em;
@@ -109,20 +109,10 @@ h1 {
   } */
 
 h2 {
-    color: #009999;
-    font-size: 1.75em;
-    font-weight: bold;
-    margin: 0em;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h3 {
     color: white;
-    margin: 1.25em 0em 0em 0em;
-    padding: 0em;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
-    letter-spacing: .07em;
+    margin: 0 1rem 0 1rem;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -235,41 +225,68 @@ button:hover {
     font-weight: bold;
 }
 
+.break {
+    display: none;
+}
+
+.logoimage {
+    display: none;
+    width: 28px;
+    height: 28px;
+}
+
+.navtext {
+    display: inline-block;
+}
+
 @media screen and (max-width: 675px) {
     .content {
-        margin-top: 11em;
+        margin-top: 7em;
         overflow-x: hidden;
     }
-
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .menu-container {
-        display: block;
-    }
-
     #toptext {
         display: none;
     }
-
     #mobiletext {
         display: block;
     }
-
     #profilepic {
         float: none;
     }
-
     nav a {
+        font-size: 1em;
         padding-left: .5em;
         padding-right: .5em;
         font-weight: normal;
     }
-
     h2 {
         font-size: 1em;
+    }
+    .break {
+        display: block;
+    }
+    footer {
+        height: 3.5em;
+    }
+    .logoimage {
+        display: inline-block;
+    }
+    .desktoptext {
+        display: none;
+    }
+
+    .logoimage {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .projects {
+        font-size: 1em;
+    }
+
+    .projects li, .projects a {
+        margin-bottom: 1em;
+    
     }
 }
