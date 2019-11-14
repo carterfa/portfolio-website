@@ -261,6 +261,7 @@ button:hover {
     }
     h2 {
         font-size: 1em;
+        text-align: center;
     }
     .break {
         display: block;
@@ -268,9 +269,7 @@ button:hover {
     footer {
         height: 3.5em;
     }
-    .logoimage {
-        display: inline-block;
-    }
+
     .desktoptext {
         display: none;
     }
@@ -288,5 +287,11 @@ button:hover {
     .projects li, .projects a {
         margin-bottom: 1em;
     
+    }
+
+    #profilepic {
+        width: 200px;
+        margin: 1em auto;
+        float: none;
     }
 }
