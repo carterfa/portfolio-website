@@ -103,29 +103,6 @@ h2 {
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-section {
-    margin-top: 2.25em;
-    overflow-y: hidden;
-}
-
-label {
-    color: white;
-    padding: 0em;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: .07em;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-textarea, input {
-    display: block;
-    width: 50%;
-}
-
-textarea {
-    height: 10em;
-}
-
 p, li, a {
     color: white;
     margin: 0em;
@@ -170,7 +147,7 @@ nav a {
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-a:hover {
+.projects a:hover {
     color: white;
     background-color: #006666;
 }
@@ -179,18 +156,27 @@ a:hover {
     background-color: #009999;
 }
 
-#readBtn {
-    margin: 1.25em 0em 0em 0em;
-    font-size: 1.25em;
-}
-
-button:hover {
-    background-color: #006666;
-}
-
-.projects {
+.projects, .projectTitle {
     font-size: 1.6em;
     font-weight: bold;
+    clear: both;
+}
+
+.projectBox{
+    text-align: center;
+    padding: 1em;
+    display: inline-block;
+    width: 500px;
+}
+
+.projectRow{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail {
+    border: solid 4px white;
 }
 
 .break {
@@ -203,8 +189,32 @@ button:hover {
     height: 28px;
 }
 
+.repolink{
+    width: 20px;
+    height: 20px;
+}
+
 .navtext {
     display: inline-block;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1000px){
+
+    .projectBox{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .projectRow{
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 675px) {
@@ -212,6 +222,10 @@ button:hover {
         margin-top: 7em;
         overflow-x: hidden;
         text-align: center;
+    }
+
+    .bio{
+        text-align: left;
     }
     #toptext {
         display: none;
