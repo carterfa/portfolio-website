@@ -17,7 +17,7 @@ body {
     flex: 1 0 auto;
     width: 85%;
     overflow: auto;
-    margin-top: 10.5em;
+    margin-top: 11em;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1em;
@@ -87,7 +87,7 @@ h1 {
     display: none;
     color: white;
     font-size: 3em;
-    float: left;
+    text-align: center;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding-left: .1em;
@@ -135,6 +135,7 @@ p, li, a {
     list-style-type: none;
     line-height: 1.75em;
     letter-spacing: .05em;
+    text-decoration: none;
 }
 
 nav {
