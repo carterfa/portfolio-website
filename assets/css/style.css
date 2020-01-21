@@ -68,8 +68,8 @@ footer {
 
 h1 {
     color: white;
-    font-size: 9em;
     font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0;
 }
 
 #toptext {
@@ -81,18 +81,6 @@ h1 {
     margin: 0;
     padding-left: .1em;
     background: #009999;
-}
-
-#mobiletext {
-    display: none;
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    font-family: futura-pt, Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding-left: .1em;
-    background: #009999;
-    width: 100vw;
 }
 
 h2 {
@@ -160,6 +148,7 @@ nav a {
     font-size: 1.6em;
     font-weight: bold;
     clear: both;
+    margin-top: 0;
 }
 
 .projectBox{
@@ -228,10 +217,7 @@ nav a {
         text-align: left;
     }
     #toptext {
-        display: none;
-    }
-    #mobiletext {
-        display: block;
+        font-size: 3em;
     }
     #profilepic {
         float: none;
